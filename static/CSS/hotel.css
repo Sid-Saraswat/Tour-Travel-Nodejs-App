@@ -1,0 +1,495 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+/* <!------------------------------------------------- Hotels Section ------------------------------------------- --> */
+
+#slideimg2 {
+    height: 100%;
+    width: 100%;
+    animation: zoom 3s linear infinite;
+    transition: zoom 3s;
+}
+
+#featured-hotel {
+    float: left;
+    width: 100%;
+}
+
+.feature-full-1col {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.feature-full-1col .image, .feature-full-1col .desc {
+    float: left;
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .feature-full-1col .image, .feature-full-1col .desc {
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+    }
+}
+
+.feature-full-1col .image {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+}
+
+.feature-full-1col .image .descrip {
+    width: 180px;
+    position: absolute;
+    top: 0;
+    right: -180px;
+    padding: 10px;
+    background: chartreuse;
+    transition: 0.2s;
+}
+
+.feature-full-1col .image .descrip p {
+    margin: 0;
+    color: white;
+}
+
+.feature-full-1col .image .descrip small, .feature-full-1col .image .descrip span {
+    display: block;
+}
+
+.feature-full-1col .image .descrip small {
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .feature-full-1col .image {
+        height: 300px;
+    }
+}
+
+.feature-full-1col .desc {
+    padding: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .feature-full-1col .desc {
+        padding: 30px;
+    }
+}
+
+.feature-full-1col:hover .image .descrip, .feature-full-1col:focus .image .descrip {
+    right: 0;
+}
+
+.feature-full-2col {
+    margin-bottom: 40px;
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .feature-full-2col {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+.feature-full-2col .f-hotel {
+    float: left;
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 8px;
+}
+
+@media screen and (max-width: 992px) {
+    .feature-full-2col .f-hotel {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+}
+
+.feature-full-2col .f-hotel .descrip {
+    width: 180px;
+    position: absolute;
+    top: 0;
+    right: -180px;
+    padding: 10px;
+    background: chartreuse;
+    transition: 0.2s;
+}
+
+.feature-full-2col .f-hotel .descrip p {
+    margin: 0;
+    color: white;
+}
+
+.feature-full-2col .f-hotel .descrip small, .feature-full-2col .f-hotel .descrip span {
+    display: block;
+}
+
+.feature-full-2col .f-hotel .descrip small {
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.feature-full-2col .f-hotel .image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@media screen and (max-width: 480px) {
+    .feature-full-2col .f-hotel .image {
+        position: relative;
+        height: 200px;
+    }
+}
+
+.feature-full-2col .f-hotel .image, .feature-full-2col .f-hotel .desc {
+    width: 50%;
+}
+
+@media screen and (max-width: 480px) {
+    .feature-full-2col .f-hotel .image, .feature-full-2col .f-hotel .desc {
+        width: 100%;
+    }
+}
+
+.feature-full-2col .f-hotel .desc {
+    padding: 30px;
+}
+
+.feature-full-2col .f-hotel:hover .image .descrip, .feature-full-2col .f-hotel:focus .image .descrip {
+    right: 0;
+}
+
+#featured-hotel, #hotel-facilities, #testimonial, #fh5co-blog-section, #fh5co-hotel-section, #fh5co-services-section, #fh5co-contact-section, #footer {
+    padding: 7em 0;
+}
+
+/* <!------------------------------------------------- Hotels Section ------------------------------------------ */
+
+#featured-hotel, #hotel-facilities, #testimonial, #fh5co-blog-section, #fh5co-hotel-section, #fh5co-services-section, #fh5co-contact-section, #footer {
+    padding: 0px;
+}
+
+#hotel-facilities {
+    width: 80%;
+    margin: auto;
+    transition: 0.5s;
+    position: relative;
+    height: 100vh;
+}
+
+#tabs {
+    float: left;
+    width: 100%;
+}
+
+#tabs .tabs-nav {
+    float: left;
+    width: 100%;
+}
+
+#tabs .tabs-nav>a {
+    float: left;
+    width: 16.666667%;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ccc;
+    padding: 10px 0 40px 0;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+    position: relative;
+}
+
+#tabs .tabs-nav>a>.fa {
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+#tabs .tabs-nav>a>.fa:before {
+    font-size: 32px;
+}
+
+#tabs .tabs-nav>a>.fa, #tabs .tabs-nav>a>span {
+    display: block;
+}
+
+#tabs .tabs-nav>a>span {
+    font-weight: 700;
+}
+
+#tabs .tabs-nav>a.active {
+    color: chartreuse;
+    border-bottom: 1px solid chartreuse;
+}
+
+#tabs .tabs-nav>a.active .fa {
+    color: chartreuse;
+}
+
+#tabs .tabs-nav>a:hover {
+    text-decoration: none;
+    color: chartreuse;
+    cursor: pointer;
+}
+
+#tabs .tabs-nav>a:hover .fa {
+    color: chartreuse;
+}
+
+#tabs .tabs-nav>a:focus, #tabs .tabs-nav>a:active {
+    outline: none;
+    text-decoration: none !important;
+}
+
+#tabs .tabs-nav>a:focus>.fa, #tabs .tabs-nav>a:focus>span, #tabs .tabs-nav>a:active>.fa, #tabs .tabs-nav>a:active>span {
+    text-decoration: none !important;
+}
+
+#tabs .tab-content-container {
+    position: relative;
+    width: 100%;
+    float: left;
+    padding-top: 40px;
+}
+
+#tabs .tab-content-container .tab-content {
+    position: absolute;
+    width: 100%;
+    float: left;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#tabs .tab-content-container .tab-content.show {
+    opacity: 1;
+}
+
+#tabs .heading {
+    font-size: 40px;
+    color: #52565b;
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+
+#tabs .super-heading-sm {
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    color: #bcbcbc;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#tabs .service-hour {
+    padding-top: 20px;
+}
+
+#tabs .service-hour>span {
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    color: #bcbcbc;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+}
+
+#tabs .service-hour>strong {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #52565b;
+}
+
+#fh5co-hotel-section .hotel-content .hotel-grid {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+#fh5co-hotel-section .hotel-content .hotel-grid .price small {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#fh5co-hotel-section .hotel-content .hotel-grid>div {
+    width: 110px;
+    position: absolute;
+    top: 0;
+    left: -110px;
+    padding: 10px;
+    background: chartreuse;
+    color: #fff;
+    transition: 0.1s;
+}
+
+#fh5co-hotel-section .hotel-content .hotel-grid>div small {
+    display: block;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+#fh5co-hotel-section .hotel-content .hotel-grid>div span {
+    display: block;
+    font-size: 18px;
+}
+
+#fh5co-hotel-section .hotel-content .hotel-grid .book-now {
+    position: absolute;
+    bottom: -47px;
+    right: 0;
+    color: #fff;
+    width: 120px;
+    padding: 7px 0;
+    background: #3c4146;
+    transition: 0.1s;
+}
+
+#fh5co-hotel-section .hotel-content .desc {
+    border-top: 0;
+    padding: 20px;
+    margin-bottom: 40px;
+    transition: 0.1s;
+}
+
+@media screen and (max-width: 992px) {
+    #fh5co-hotel-section .hotel-content .desc {
+        margin-bottom: 40px;
+    }
+}
+
+#fh5co-hotel-section .hotel-content .desc h3 {
+    font-size: 20px;
+    margin: 0 0 20px 0;
+}
+
+#fh5co-hotel-section .hotel-content .desc h3 a {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#fh5co-hotel-section .hotel-content:hover .hotel-grid>div, #fh5co-hotel-section .hotel-content:focus .hotel-grid>div {
+    left: 0;
+}
+
+#fh5co-hotel-section .hotel-content:hover .hotel-grid .book-now, #fh5co-hotel-section .hotel-content:focus .hotel-grid .book-now {
+    bottom: 0;
+}
+
+#fh5co-hotel-section .hotel-content:hover .desc, #fh5co-hotel-section .hotel-content:focus .desc {
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.06);
+}
+
+.tab-content .container .row .col-md-6 img {
+    width: 440px;
+    height: 520px;
+}
+
+/* -----------------------------------------Slider------------------------------------------------ */
+
+.swiper-container {
+    width: 100%;
+    cursor: grab;
+    position: relative;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 370px;
+    border-radius: 7px;
+}
+
+.swiper-slide img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 370px;
+    border-radius: 7px;
+    position: absolute;
+}
+
+.roomSpec {
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.roomSpec a {
+    color: white;
+}
+
+.roomSpec a:hover {
+    color: chartreuse;
+}
+
+@media screen and (max-width: 400px) {
+    #tabs .tabs-nav>a {
+        font-size: 6px;
+        padding: 10px 0 17px 0;
+    }
+    #tabs .tabs-nav>a>.fa:before {
+        font-size: 20px;
+    }
+    .tab-content .container .row .col-md-6 img {
+        width: 100%;
+        height: 300px;
+    }
+    #tabs .super-heading-sm {
+        font-size: 10px;
+    }
+    #tabs .heading {
+        font-size: 20px;
+        margin: 0 0 15px 0;
+    }
+    #hotel-facilities {
+        height: 120vh;
+        width: 90%;
+    }
+    p {
+        font-size: 12px;
+        margin-bottom: 0.5rem;
+    }
+    #tabs .service-hour>span {
+        font-size: 10px;
+    }
+    #tabs .service-hour>strong {
+        font-size: 14px;
+    }
+    .swiper-slide {
+        min-width: 370px;
+        height: 330px;
+    }
+}

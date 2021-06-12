@@ -1,0 +1,40 @@
+.contact-col {
+    flex-basis: 50%;
+    margin-bottom: 30px;
+}
+
+.contact-col input, .contact-col textarea, select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    outline-color: chartreuse;
+}
+
+input[type=checkbox] {
+    margin: 0%;
+    margin-right: 10px;
+    width: auto;
+    margin-bottom: 17px;
+}
+
+.checkbox {
+    margin-right: 40px;
+    margin-bottom: 17px;
+    display: inline-block;
+}
+
+.contact-col form button {
+    width: 160px;
+    margin: auto;
+    font-size: 14px;
+}
+
+.contact-col form button:hover {
+    color: black;
+}
+
+.SpecialPackagesBooking {
+    overflow-x: hidden;
+}
