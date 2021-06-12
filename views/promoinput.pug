@@ -1,0 +1,11 @@
+
+block style
+  style
+    include ../static/CSS/payment.css
+block content
+  form(action='/PromoCode' method='POST' onsubmit='return validation()')
+    label(for='promo') Enter Promo Code:
+    input#name(type='text' name='promo' required)
+    label(for='codevalue') Enter value:
+    input#email(type='number' name='codevalue' required)
+    button.btn.btn-primary.btn-lg.btn-block(type='submit') Continue to Save

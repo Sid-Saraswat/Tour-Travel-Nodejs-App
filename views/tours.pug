@@ -1,0 +1,159 @@
+extends base.pug
+block style
+  style
+    include ../static/CSS/tours.css
+block content
+  //-  <!----------------------------------------------FEATURED TOURS ------------------------------------------>
+  section.FeaturedToures
+    .Featuredtoures
+      h1.h1
+        span.span
+        | Featured Tours
+        span.span
+      // Swiper
+      .container
+        .swiper-container
+          .swiper-wrapper
+            .swiper-slide
+              img(src='../static/img/Paris.jpg' alt='Image')
+              h4
+                a(href='/PlaceDetail/Paris' onclick="CountryName(this)") Paris
+            .swiper-slide
+              img(src='../static/img/brazil.jpg' alt='Image')
+              h4
+                a(href='/PlaceDetail/Brazil' onclick="CountryName(this)") Brazil
+            .swiper-slide
+              img(src='../static/img/Australia.jpg' alt='Image')
+              h4
+                a(href='/PlaceDetail/Australia' onclick="CountryName(this)") Australia
+            .swiper-slide
+              img(src='../static/img/London.jpg' alt='Image')
+              h4
+                a(href='/PlaceDetail/London' onclick="CountryName(this)") London
+            .swiper-slide
+              img(src='../static/img/Turkey.jpg' alt='Image')
+              h4
+                a(href='/PlaceDetail/Turkey' onclick="CountryName(this)") Turkey
+            .swiper-slide
+              img(src='../static/img/rome.jpg' alt='Image')
+              h4
+                a(href='/PlaceDetail/Rome' onclick="CountryName(this)") Rome
+            .swiper-slide
+              img(src='../static/img/mexico.jpg' alt='Image')
+              h4
+                a(href='/PlaceDetail/Mexico City' onclick="CountryName(this)") Mexico City
+            .swiper-slide
+              img(src='../static/img/capeTown.jpg' alt='Image')
+              h4
+                a(href='/PlaceDetail/Cape Town' onclick="CountryName(this)") Cape Town
+            .swiper-slide
+              img(src='../static/img/sanFrancisco.jpg' alt='Image')
+              h4
+                a(href='/PlaceDetail/San Francisco' onclick="CountryName(this)") San Francisco
+            .swiper-slide
+              img(src='../static/img/sydney.jpg' alt='Image')
+              h4
+                a(href='/PlaceDetail/Sydney' onclick="CountryName(this)") Sydney
+            .swiper-slide
+              img(src='../static/img/st.Lucia.jpg' alt='Image')
+              h4
+                a(href='/PlaceDetail/St. Lucia' onclick="CountryName(this)") St. Lucia
+            .swiper-slide
+              img(src='../static/img/England.jpg' alt='Image')
+              h4
+                a(href='/PlaceDetail/England' onclick="CountryName(this)") England
+  //- <!----------------------------------------------Categories TOURS ------------------------------------------>
+  section.Categories
+    .categories
+      h1.h1
+        span.span
+        | Categories
+        span.span
+      .container
+        .swiper-container
+          .swiper-wrapper
+            .swiper-slide
+              img(src='../static/img/familyTours.jpg' alt='Image')
+              h4
+                a(href='/Tours/FamilyTours') Family Tours
+            .swiper-slide
+              img(src='../static/img/cheapTours.jpg' alt='Image')
+              h4
+                a(href='/Tours/CheapTours') Cheap Tours
+            .swiper-slide
+              img(src='../static/img/beachTours.jpg' alt='Image')
+              h4
+                a(href='/Tours/BeachTours') Beach Tours
+            .swiper-slide
+              img(src='../static/img/seasonTours.jpg' alt='Image')
+              h4
+                a(href='/Tours/SeasonTours') Tours by Season
+            .swiper-slide
+              img(src='../static/img/romanticTours.jpg' alt='Image')
+              h4
+                a(href='/Tours/RomanticTours') Romantic & Honeymoon Tours
+            .swiper-slide
+              img(src='../static/img/otherTours.jpg' alt='Image')
+              h4
+                a(href='/Tours/MoreTours') More Tours
+  //- <!----------------------------------------------All TOURS ------------------------------------------>
+  section.AllTours
+    .allTours
+      h1.h1
+        span.span
+        | All Tours
+        span.span
+      // Swiper
+      .container
+        .swiper-container
+          .swiper-wrapper
+            .swiper-slide
+              img(src='../static/img/Australia.jpg' alt='Image')
+              h4
+                a.details.active(href='/PlaceDetail/Australia' onclick="CountryName(this)") Australia
+            .swiper-slide
+              img(src='../static/img/Paris.jpg' alt='Image')
+              h4
+                a.details(href='/PlaceDetail/Paris' onclick="CountryName(this)") Paris
+            .swiper-slide
+              img(src='../static/img/London.jpg' alt='Image')
+              h4
+                a.details(href='/PlaceDetail/London' onclick="CountryName(this)") London
+            .swiper-slide
+              img(src='../static/img/rome.jpg' alt='Image')
+              h4
+                a.details(href='/PlaceDetail/Rome' onclick="CountryName(this)") Rome
+            .swiper-slide
+              img(src='../static/img/mexico.jpg' alt='Image')
+              h4
+                a.details(href='/PlaceDetail/Mexico City' onclick="CountryName(this)") Mexico City
+            .swiper-slide
+              img(src='../static/img/capeTown.jpg' alt='Image')
+              h4
+                a.details(href='/PlaceDetail/Cape Town' onclick="CountryName(this)" ) Cape Town
+            .swiper-slide
+              img(src='../static/img/brazil.jpg' alt='Image')
+              h4
+                a.details(href='/PlaceDetail/Brazil' onclick="CountryName(this)") Brazil
+            .swiper-slide
+              img(src='../static/img/sanFrancisco.jpg' alt='Image')
+              h4
+                a.details(href='/PlaceDetail/San Francisco' onclick="CountryName(this)") San Francisco
+            .swiper-slide
+              img(src='../static/img/sydney.jpg' alt='Image')
+              h4
+                a.details(href='/PlaceDetail/Sydney' onclick="CountryName(this)") Sydney
+            .swiper-slide
+              img(src='../static/img/st.Lucia.jpg' alt='Image')
+              h4
+                a.details(href='/PlaceDetail/St. Lucia' onclick="CountryName(this)") St. Lucia
+            .swiper-slide
+              img(src='../static/img/England.jpg' alt='Image')
+              h4
+                a.details(href='/PlaceDetail/England' onclick="CountryName(this)") England
+          .btn
+            a.m2(href='/Tours/AllPlaces')
+              button(onclick="myFunction(AllPlaces)") All Places
+block scripts
+  script(src='https://unpkg.com/swiper/swiper-bundle.min.js')
+  script(src='../static/JS/tours.js')

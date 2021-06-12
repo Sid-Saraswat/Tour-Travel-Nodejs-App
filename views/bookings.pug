@@ -1,0 +1,38 @@
+extends base.pug
+block style
+  style
+    include ../static/CSS/bookings.css
+block content
+  section#Bookings
+    .Bookings
+      h1.h1
+        span.span
+        | Bookings
+        span.span
+    .container
+      each n in Data
+        each x in n
+          #order-heading.d-flex.flex-column.justify-content-center.align-items-center
+            .text-uppercase
+              p Booking Detail
+            .h4= x.TripDate
+          .wrapper.bg-white
+            .table-responsive
+              table.table.table-borderless
+                thead
+                  tr.text-uppercase.text-muted
+                    th(scope='col') to
+                    th.text-right(scope='col') total
+                tbody
+                  tr
+                    th(scope='row')= x.ProductName
+                    td.text-right
+                      b= x.TotalPrice
+            .d-flex.justify-content-start.align-items-center.list.py-1
+              div
+                b 1 Person
+              .mx-3
+              .order-item= x.UserName
+            .pt-2.border-bottom.mb-3
+      else
+        h1  No Bookings Yet.....!!!   

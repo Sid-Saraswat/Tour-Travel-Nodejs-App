@@ -1,0 +1,321 @@
+extends hotelbase.pug
+block content
+  // ----------------------------------------------- Hotels Section -------------------------------------------
+  section#Hotels
+    .hotels
+      h1.h1
+        span.span
+        | Hotels
+        span.span
+      #featured-hotel
+        .container
+          .row
+            .feature-full-1col
+              .image(style='background-image: url(../static/img/hotel3.jpg);')
+                .descrip.text-center
+                  p
+                    small For as low as
+                    span $199/night
+              .desc
+                h3 Deluxe Hotel
+                p
+                  | Pellentesque habitant morbi tristique senectus et netus ett mauada fames ac turpis
+                  | egestas. Etiam euismod tempor leo, in suscipit urna condimentum sed. Vivamus augue
+                  | enim, consectetur ac interdum a, pulvinar ac massa. Nullam malesuada congue
+                a(href="/HotelBooking")
+                  button.about-view.packages-btn
+                    | book now
+            .feature-full-2col
+              .f-hotel
+                .image(style='background-image: url(../static/img/hotel2.jpg);')
+                  .descrip.text-center
+                    p
+                      small For as low as
+                      span $149/night
+                .desc
+                  h3 Hotel Bora
+                  p
+                    | Pellentesque habitant morbi tristique senectus et netus ett mauada fames ac
+                    | turpis egestas. Etiam euismod tempor leo,
+                    | in suscipit urna condimentum sed.
+                  a(href="/HotelBooking")
+                    button.about-view.packages-btn
+                      | book now
+              .f-hotel
+                .image(style='background-image: url(../static/img/hotel1.jpg);')
+                  .descrip.text-center
+                    p
+                      small For as low as
+                      span $139/night
+                .desc
+                  h3 D’Morvie
+                  p
+                    | Pellentesque habitant morbi tristique senectus et netus ett mauada fames ac
+                    | turpis egestas. Etiam euismod tempor leo, in suscipit urna condimentum sed.
+                  a(href="/HotelBooking")
+                    button.about-view.packages-btn
+                      | book now
+  // ----------------------------------------------- Hotels Facilities -------------------------------------------
+  section#HotelsFacilities
+    .hotelsFacilities
+      h1.h1
+        span.span
+        | Hotel Facilities
+        span.span
+      #hotel-facilities
+        #tabs
+          nav.tabs-nav
+            a.tab.active
+              i.fa.fa-cutlery(aria-hidden='true')
+              span Restaurant
+            a.tab
+              i.fa.fa-beer(aria-hidden='true')
+              span Bar
+            a.tab
+              i.fa.fa-car(aria-hidden='true')
+              span Pick-up
+            a.tab
+              i.fa.fa-bath(aria-hidden='true')
+              span Swimming Pool
+            a.tab
+              i.fa.fa-bath(aria-hidden='true')
+              span Spa
+            a.tab
+              i.fa.fa-bicycle(aria-hidden='true')
+              span Gym
+          .tab-content-container
+            .tab-content.active.show
+              .container
+                .row
+                  .col-md-6
+                    img.img-responsive(src='../static/img/HotelRestaurent.jpg' alt='Image')
+                  .col-md-6
+                    span.super-heading-sm World Class
+                    h3.heading Restaurant
+                    p
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
+                      | officia perferendis modi impedit, rem quasi veritatis. Consectetur
+                      | obcaecati incidunt, quae rerum, accusamus sapiente fuga vero at. Quia,
+                      | labore, reprehenderit illum dolorem quae facilis reiciendis quas
+                      | similique totam sequi ducimus temporibus ex nemo, omnis perferendis
+                      | earum fugit impedit molestias animi vitae.
+                    p
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+                      | neque blanditiis eveniet nesciunt, beatae similique doloribus, ex
+                      | impedit rem officiis placeat dignissimos molestias temporibus, in!
+                      | Minima quod, consequatur neque aliquam.
+                    p.service-hour
+                      span Service Hours
+                      strong 7:30 AM - 8:00 PM
+            #tab2.tab-content
+              .container
+                .row
+                  .col-md-6
+                    img.img-responsive(src='../static/img/HotelBar.jpg' alt='Image')
+                  .col-md-6
+                    span.super-heading-sm World Class
+                    h3.heading Bars
+                    p
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
+                      | officia perferendis modi impedit, rem quasi veritatis. Consectetur
+                      | obcaecati incidunt, quae rerum, accusamus sapiente fuga vero at. Quia,
+                      | labore, reprehenderit illum dolorem quae facilis reiciendis quas
+                      | similique totam sequi ducimus temporibus ex nemo, omnis perferendis
+                      | earum fugit impedit molestias animi vitae.
+                    p
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+                      | neque blanditiis eveniet nesciunt, beatae similique doloribus, ex
+                      | impedit rem officiis placeat dignissimos molestias temporibus, in!
+                      | Minima quod, consequatur neque aliquam.
+                    p.service-hour
+                      span Service Hours
+                      strong 7:30 AM - 8:00 PM
+            #tab3.tab-content
+              .container
+                .row
+                  .col-md-6
+                    img.img-responsive(src='../static/img/HotelPickUp.jpg' alt='Image')
+                  .col-md-6
+                    span.super-heading-sm World Class
+                    h3.heading Pick Up
+                    p
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
+                      | officia perferendis modi impedit, rem quasi veritatis. Consectetur
+                      | obcaecati incidunt, quae rerum, accusamus sapiente fuga vero at. Quia,
+                      | labore, reprehenderit illum dolorem quae facilis reiciendis quas
+                      | similique totam sequi ducimus temporibus ex nemo, omnis perferendis
+                      | earum fugit impedit molestias animi vitae.
+                    p
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+                      | neque blanditiis eveniet nesciunt, beatae similique doloribus, ex
+                      | impedit rem officiis placeat dignissimos molestias temporibus, in!
+                      | Minima quod, consequatur neque aliquam.
+                    p.service-hour
+                      span Service Hours
+                      strong 7:30 AM - 8:00 PM
+            #tab4.tab-content
+              .container
+                .row
+                  .col-md-6
+                    img.img-responsive(src='../static/img/HotelSwimming.jpg' alt='Image')
+                  .col-md-6
+                    span.super-heading-sm World Class
+                    h3.heading Swimming Pool
+                    p
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
+                      | officia perferendis modi impedit, rem quasi veritatis. Consectetur
+                      | obcaecati incidunt, quae rerum, accusamus sapiente fuga vero at. Quia,
+                      | labore, reprehenderit illum dolorem quae facilis reiciendis quas
+                      | similique totam sequi ducimus temporibus ex nemo, omnis perferendis
+                      | earum fugit impedit molestias animi vitae.
+                    p
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+                      | neque blanditiis eveniet nesciunt, beatae similique doloribus, ex
+                      | impedit rem officiis placeat dignissimos molestias temporibus, in!
+                      | Minima quod, consequatur neque aliquam.
+                    p.service-hour
+                      span Service Hours
+                      strong 7:30 AM - 8:00 PM
+            #tab5.tab-content
+              .container
+                .row
+                  .col-md-6
+                    img.img-responsive(src='../static/img/HotelSpa.jpg' alt='Image')
+                  .col-md-6
+                    span.super-heading-sm World Class
+                    h3.heading Spa
+                    p
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
+                      | officia perferendis modi impedit, rem quasi veritatis. Consectetur
+                      | obcaecati incidunt, quae rerum, accusamus sapiente fuga vero at. Quia,
+                      | labore, reprehenderit illum dolorem quae facilis reiciendis quas
+                      | similique totam sequi ducimus temporibus ex nemo, omnis perferendis
+                      | earum fugit impedit molestias animi vitae.
+                    p
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+                      | neque blanditiis eveniet nesciunt, beatae similique doloribus, ex
+                      | impedit rem officiis placeat dignissimos molestias temporibus, in!
+                      | Minima quod, consequatur neque aliquam.
+                    p.service-hour
+                      span Service Hours
+                      strong 7:30 AM - 8:00 PM
+            #tab6.tab-content
+              .container
+                .row
+                  .col-md-6
+                    img.img-responsive(src='../static/img/HotelGym.jpg' alt='Image')
+                  .col-md-6
+                    span.super-heading-sm World Class
+                    h3.heading Gym
+                    p
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
+                      | officia perferendis modi impedit, rem quasi veritatis. Consectetur
+                      | obcaecati incidunt, quae rerum, accusamus sapiente fuga vero at. Quia,
+                      | labore, reprehenderit illum dolorem quae facilis reiciendis quas
+                      | similique totam sequi ducimus temporibus ex nemo, omnis perferendis
+                      | earum fugit impedit molestias animi vitae.
+                    p
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+                      | neque blanditiis eveniet nesciunt, beatae similique doloribus, ex
+                      | impedit rem officiis placeat dignissimos molestias temporibus, in!
+                      | Minima quod, consequatur neque aliquam.
+                    p.service-hour
+                      span Service Hours
+                      strong 7:30 AM - 8:00 PM  
+  // ----------------------------------------------- Hotels Facilities -------------------------------------------
+  section#HotelsRooms
+    .hotelsRooms
+      h1.h1
+        span.span
+        | Hotel Rooms
+        span.span
+      .container
+        .main
+          // Swiper
+          .swiper-container
+            .swiper-wrapper
+              .swiper-slide
+                img(src='../static/img/hr1.jpg' alt='')
+                .roomSpec
+                  a(href='#')
+                    h4 Family Room
+                  small 2 Adults 1 Children
+                  h6 Starting From
+                    h5 $500
+              .swiper-slide
+                img(src='../static/img/hr2.jpg' alt='')
+                .roomSpec
+                  a(href='#')
+                    h4 Family Room
+                  small 2 Adults 1 Children
+                  h6 Starting From
+                    h5 $500
+              .swiper-slide
+                img(src='../static/img/hr4.jpg' alt='')
+                .roomSpec
+                  a(href='#')
+                    h4 Family Room
+                  small 2 Adults 1 Children
+                  h6 Starting From
+                    h5 $500
+              .swiper-slide
+                img(src='../static/img/hr5.jpg' alt='')
+                .roomSpec
+                  a(href='#')
+                    h4 Family Room
+                  small 2 Adults 1 Children
+                  h6 Starting From
+                    h5 $500
+              .swiper-slide
+                img(src='../static/img/hr6.jpg' alt='')
+                .roomSpec
+                  a(href='#')
+                    h4 Family Room
+                  small 2 Adults 1 Children
+                  h6 Starting From
+                    h5 $500
+              .swiper-slide
+                img(src='../static/img/hr7.jpg' alt='')
+                .roomSpec
+                  a(href='#')
+                    h4 Family Room
+                  small 2 Adults 1 Children
+                  h6 Starting From
+                    h5 $500
+              .swiper-slide
+                img(src='../static/img/hr8.jpg' alt='')
+                .roomSpec
+                  a(href='#')
+                    h4 Family Room
+                  small 2 Adults 1 Children
+                  h6 Starting From
+                    h5 $500
+              .swiper-slide
+                img(src='../static/img/hr9.jpg' alt='')
+                .roomSpec
+                  a(href='#')
+                    h4 Family Room
+                  small 2 Adults 1 Children
+                  h6 Starting From
+                    h5 $500
+              .swiper-slide
+                img(src='../static/img/hr10.jpg' alt='')
+                .roomSpec
+                  a(href='#')
+                    h4 Family Room
+                  small 2 Adults 1 Children
+                  h6 Starting From
+                    h5 $500
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+extends hotelbase.pug
+block style
+  style
+    include ../static/CSS/specialbooking.css
+block content
+  section.SpecialPackagesBooking
+    .specialPackagesBooking
+      h1.h1
+        span.span
+        | Booking
+        span.span
+      .row
+        .contact-col
+          form(action='/HotelBook' method='POST' onsubmit='return validation()')
+            label(for='name') Enter Your Name:
+            input#name(type='text' name='name' placeholder='John Doe/Jane Doe' required)
+            label(for='email') Enter Your Email Address:
+            input#email(type='email' name='email' placeholder='john@something.com' required)
+            label(for='phone') Enter Your Mobile No.:
+            input#phone(type='phone' name='phone' placeholder='Telephone / Moble Number' required)
+            label(for='datetime') Check In:
+            input#datetime(type='datetime-local' name='datetime' placeholder='Check In' required)
+            label(for='places') Choose a Trip:
+            select#places(name='place' required)
+              option(value='Deluxe Hotel') Deluxe Hotel
+              option(value='Hotel Bora') Hotel Bora
+              option(value='D’Morvie') D’Morvie
+            input#bringingPet(type='checkbox' name='bringingPet')
+            span.checkbox
+              | Will you be
+              | bringing a pet?
+            input#needToPickUp(type='checkbox' name='needToPickUp')
+            span.checkbox
+              | Do you need
+              | us to pick you up?
+            label(for='suggestion') Anything else we should know about?
+            textarea#suggestion(name='suggestion' cols='30' rows='4' placeholder='Let us know about any special accommodation needs (Be as descriptive as possible)')
+            label(for='promo') Have Any Promo Code?:
+            input#promo(type='text' name='promo' placeholder='PROMOCODE')
+            button(type='submit') Make Payment
+block scripts
+  script(src='../static/JS/specialbooking.js')

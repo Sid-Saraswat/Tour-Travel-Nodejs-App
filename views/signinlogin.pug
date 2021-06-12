@@ -1,0 +1,29 @@
+extends base.pug
+block style
+  style
+    include ../static/CSS/signinlogin.css
+block content
+  .SiginLogin-container
+    .SiginLogin-card
+      #SiginLogin-inner-box.SiginLogin-inner-box
+        .SiginLogin-card-front
+          h2 LOGIN
+          form(action='/Login' method='POST')
+            input.SiginLogin-input-box(type='email'  name="email" placeholder='Enter your E-mail' required)
+            input.SiginLogin-input-box(type='password'  name="password" placeholder='Enter your Password' required)
+            button#SIOBtn.SiginLogin-submit-btn(type='submit') Submit
+            input(type='checkbox')
+            span Remember Me
+          button.SiginLogin-btn(type='button' onclick='openRegister()') I'm New Here
+          a(href='/ForgotPassword') Forgot Password ?
+        .SiginLogin-card-back
+          h2 REGISTER
+          form(action='/SignUp' method='POST')
+            input.SiginLogin-input-box(type='text' name="name" placeholder='Enter your Name' required)
+            input.SiginLogin-input-box(type='email' name="email" placeholder='Enter your E-mail' required)
+            input.SiginLogin-input-box(type='password' name="password" placeholder='Enter your Password' required)
+            input.SiginLogin-input-box(type='password' name="cpassword" placeholder='Conform your Password' required)
+            button#SIOBtn2.SiginLogin-submit-btn(type='submit') Submit
+            input(type='checkbox')
+            span Remember Me
+          button.SiginLogin-btn(type='button' onclick='openLogin()') I've an Account

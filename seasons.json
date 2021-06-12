@@ -1,0 +1,250 @@
+{
+    "SpringPlaces": [
+        {
+            "name": "London"
+        },
+        {
+            "name": "Montreal"
+        },
+        {
+            "name": "Grand Canyon"
+        },
+        {
+            "name": "San Diego"
+        },
+        {
+            "name": "Sydney"
+        },
+        {
+            "name": "Madrid"
+        },
+        {
+            "name": "Sedona"
+        },
+        {
+            "name": "St. Lucia"
+        },
+        {
+            "name": "Yellowstone"
+        },
+        {
+            "name": "New Orleans"
+        },
+        {
+            "name": "Maldives"
+        },
+        {
+            "name": "Costa Rica"
+        },
+        {
+            "name": "Seoul"
+        },
+        {
+            "name": "Amsterdam"
+        },
+        {
+            "name": "Vancouver"
+        },
+        {
+            "name": "Honolulu - Oahu"
+        },
+        {
+            "name": "Asheville, NC"
+        },
+        {
+            "name": "Brussels"
+        },
+        {
+            "name": "Athens"
+        },
+        {
+            "name": "Lake Tahoe"
+        }
+    ],
+    "SummerPlaces": [
+        {
+            "name": "Vancouver"
+        },
+        {
+            "name": "Paris"
+        },
+        {
+            "name": "San Diego"
+        },
+        {
+            "name": "Rome"
+        },
+        {
+            "name": "Florence"
+        },
+        {
+            "name": "Great Barrier Reef"
+        },
+        {
+            "name": "Edinburgh"
+        },
+        {
+            "name": "Montreux"
+        },
+        {
+            "name": "Yellowstone"
+        },
+        {
+            "name": "Chicago"
+        },
+        {
+            "name": "Dublin"
+        },
+        {
+            "name": "Bar Harbor"
+        },
+        {
+            "name": "Boston"
+        },
+        {
+            "name": "Grand Teton National Park"
+        },
+        {
+            "name": "Grand Canyon"
+        },
+        {
+            "name": "Machu Picchu"
+        },
+        {
+            "name": "Quebec City"
+        },
+        {
+            "name": "Cape Cod"
+        },
+        {
+            "name": "Kruger National Park"
+        },
+        {
+            "name": "London"
+        }
+    ],
+    "FallPlaces": [
+        {
+            "name": "Asheville, NC"
+        },
+        {
+            "name": "Grand Canyon"
+        },
+        {
+            "name": "Sedona"
+        },
+        {
+            "name": "Charleston, SC"
+        },
+        {
+            "name": "Great Smoky Mountains National Park"
+        },
+        {
+            "name": "Kauai"
+        },
+        {
+            "name": "Montreal"
+        },
+        {
+            "name": "Yellowstone"
+        },
+        {
+            "name": "Telluride"
+        },
+        {
+            "name": "Acadia National Park"
+        },
+        {
+            "name": "Jackson Hole"
+        },
+        {
+            "name": "Hawaii - The Big Island"
+        },
+        {
+            "name": "Big Sur"
+        },
+        {
+            "name": "Santa Fe"
+        },
+        {
+            "name": "Victoria & Vancouver Island"
+        },
+        {
+            "name": "San Diego"
+        },
+        {
+            "name": "San Francisco"
+        },
+        {
+            "name": "Napa Valley"
+        },
+        {
+            "name": "Vancouver"
+        },
+        {
+            "name": "Prince Edward Island"
+        }
+    ],
+    "WinterPlaces": [
+        {
+            "name": "Lucerne"
+        },
+        {
+            "name": "Turks & Caicos"
+        },
+        {
+            "name": "St. Lucia"
+        },
+        {
+            "name": "Costa Rica"
+        },
+        {
+            "name": "Rio de Janeiro"
+        },
+        {
+            "name": "Hanoi"
+        },
+        {
+            "name": "Curacao"
+        },
+        {
+            "name": "Seville"
+        },
+        {
+            "name": "Rome"
+        },
+        {
+            "name": "Quebec City"
+        },
+        {
+            "name": "Lake Tahoe"
+        },
+        {
+            "name": "Phuket"
+        },
+        {
+            "name": "Breckenridge"
+        },
+        {
+            "name": "Auckland"
+        },
+        {
+            "name": "Cartagena"
+        },
+        {
+            "name": "U.S. Virgin Islands"
+        },
+        {
+            "name": "Whistler"
+        },
+        {
+            "name": "Miami"
+        },
+        {
+            "name": "Dubai"
+        },
+        {
+            "name": "Tulum"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+extends base.pug
+block style
+  style
+    include ../static/CSS/tours.css
+block content
+  section.ClintReviews
+    .clintReviews
+      h1.h1
+        span.span
+        | Cheap Tours
+        span.span
+      .container
+        .row.cheapTour
+block scripts
+  script(src='https://unpkg.com/swiper/swiper-bundle.min.js')
+  script(src='../static/JS/tours.js')

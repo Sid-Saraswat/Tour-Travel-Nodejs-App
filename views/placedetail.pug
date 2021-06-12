@@ -1,0 +1,117 @@
+extends base.pug
+block style
+  style
+    include ../static/CSS/tours.css
+block content
+  section.PlaceDetails
+    .placeDetails
+      h1.h1
+        span.span
+        | Overview
+        span.span
+      .container.Overview
+        p
+          | Lush, unspoiled #{placeName} has a growing fan base. Some of its vacationers are music lovers, letting
+          | loose at the springtime #{placeName} Jazz & Arts Festival, or adrenaline junkies, testing their limits
+          | climbing The Pitons or zip lining through the Chassin region's rain forest. Others are honeymooners,
+          | unwinding on one of the island's chalky beaches or holing up in one of its isolated resorts.
+          | But what if you don't fall into any of these categories? Don't worry: #{placeName} refuses to be
+          | pigeonholed as any "type" of Caribbean vacation. Plus, you also don't have to spend a lot of money
+          | (its reputation as a luxurious hideout is only somewhat warranted). To discover some of the island's
+          | indescribable charms, you'll have to visit for yourself. Start your mornings basking in an
+          | orange-tinted Soufrière sunrise then round out your evenings at an evening "jump-up" (or dance
+          | party) along Gros Islet.
+      h1.h1
+        span.span
+        | Best Things To Do
+        span.span
+      .container.todo
+        p
+          | Much of #{placeName} activity happens on the west coast and specifically, in the Soufrière area.
+          | That's where you'll find the iconic Pitons that visitors like to climb, or Mount Soufrière, the
+          | pungent volcano that emits sulfurous steam. Nearby, honeymooners like to snorkel in the transparent
+          | waters of Anse Chastanet. There's also plenty to do farther north in the Rodney Bay area. That's
+          | where you'll find the lively Reduit Beach and Pigeon Island National Landmark.
+        .row
+          .swiper-slide
+            img(src='../static/img/Paris.jpg' alt='Image')
+            h4
+              a(href='/PlaceDetail/Paris') Paris
+          .swiper-slide
+            img(src='../static/img/London.jpg' alt='Image')
+            h4
+              a(href='/PlaceDetail/London') London
+          .swiper-slide
+            img(src='../static/img/mexico.jpg' alt='Image')
+            h4
+              a(href='/PlaceDetail/Mexico') Mexico
+          .swiper-slide
+            img(src='../static/img/Spain.jpg' alt='Image')
+            h4
+              a(href='/PlaceDetail/Spain') Spain
+          .swiper-slide
+            img(src='../static/img/Turkey.jpg' alt='Image')
+            h4
+              a(href='/PlaceDetail/Turkey') Turkey
+      h1.h1
+        span.span
+        | Best Times to Visit
+        span.span
+      .container.besttime
+        p
+          | The best time to visit #{placeName} is between May and June. These late spring and early summer months
+          | offer wonderful weather – high 70s to 80s – plus there are enviable room rates at the best hotels.
+          | Music lovers should consider visiting in early May specifically to attend the #{placeName} Jazz & Arts
+          | Festival that's held at Pigeon Island National Landmark. The island is flush with activity in the
+          | summer and late fall, but there's a greater chance of hurricanes. The busiest and most expensive
+          | time to vacation is from December to April, the driest season.
+        h5 December-April:
+        p
+          | Brace yourself for some of the highest room rates in #{placeName} (as much as $1,000 a night at some
+          | hotels) and the worst onslaught of crowds. The island's generally breezy weather is also at its
+          | best, with temperatures that range from the mid-70s to the mid-80s and little precipitation.
+        h5 May-June:
+        p
+          | You should have no trouble finding a deal to visit St. Lucia during one of these two months, as some
+          | popular spots advertise rooms for less than $200 a night. Temperatures rest in the mid-80s most
+          | days, with a greater chance of showers the closer it gets to summer. You should book a few months
+          | early to secure the best rates.
+        h5 July-November:
+        p
+          | You could save a bundle on a #{placeName} vacation if you're willing to chance taking a trip during the
+          | Atlantic hurricane season. But this is a festive time; you'll find the street dancing and steel drum
+          | competitions of the Lucian Carnival, which kicks off at the end of June and lasts into July, as well
+          | as other local festivals.
+      h1.h1
+        span.span
+        | Photos
+        span.span
+      .container.photos
+        // The four columns
+        .row
+          .column
+            img(src='../static/img/photo1.jpg' alt='Nature' onclick='myFunction(this);')
+          .column
+            img(src='../static/img/photo2.jpg' alt='Snow' onclick='myFunction(this);')
+          .column
+            img(src='../static/img/photo3.jpg' alt='Mountains' onclick='myFunction(this);')
+          .column
+            img(src='../static/img/photo4.jpg' alt='Lights' onclick='myFunction(this);')
+          .column
+            img(src='../static/img/photo5.jpg' alt='Lights' onclick='myFunction(this);')
+          .column
+            img(src='../static/img/photo6.jpg' alt='Lights' onclick='myFunction(this);')
+          .column
+            img(src='../static/img/photo7.jpg' alt='Lights' onclick='myFunction(this);')
+        .container
+          span.closebtn(onclick='this.parentElement.style.display="none"') &times;
+          img#expandedImg(src='../static/img/bg1.jpg' style='width:100%')
+          // <div id="imgtext"></div>
+      .container#hrefBtn
+        p(id="source")
+          | #{placeName}
+        a(href = '' id="target" ) 
+          button(type='button') Book Now
+block scripts
+  script(src='https://unpkg.com/swiper/swiper-bundle.min.js')
+  script(src='../static/JS/tours.js')

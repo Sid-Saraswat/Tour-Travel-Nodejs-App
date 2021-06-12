@@ -1,0 +1,25 @@
+extends base.pug
+block content
+  section#user
+    .user
+      h1.h1
+        span.span
+        | #{UserName}
+        span.span
+    .container.my-5
+      .row
+        a(href='#')
+          .card-user.card.text-white.m-4.text-center(style='max-width: 18rem; min-width: 14rem;')
+            .card-body
+              i.fas.fa-user
+              h5.card-title Your Details
+        a(href='/Bookings')
+          .card-user.card.text-white.m-4.text-center(style='max-width: 18rem; min-width: 14rem;')
+            .card-body
+              i.fas.fa-luggage-cart
+              h5.card-title Your Bookings
+        a(href='/Logout')
+          .card-user.card.text-white.m-4.text-center(style='max-width: 18rem; min-width: 14rem;')
+            .card-body
+              i.fas.fa-sign-out-alt
+              h5.card-title Log Out

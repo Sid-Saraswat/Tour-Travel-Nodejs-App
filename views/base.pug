@@ -1,0 +1,99 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+
+    link(rel='shortcut icon' href='../ststic/img/cover.png' type='image/x-icon')
+    link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.15.2/css/all.css' integrity='sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu' crossorigin='anonymous')
+    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css')
+
+    link(rel='stylesheet' href='../static/CSS/style.css')
+    title #{title}
+    block style
+
+  body(onload='slider()')
+    // ----------------------------------- main home page image slider --------------------------------------
+    section#Header
+      .banner
+        .slider
+          img#slideimg(src='https://drive.google.com/file/d/1ZhBYRc5XTZJ4ojbeQMa2adLt-SV_3wGO/view?usp=sharing')
+        .overlay
+          .navbar
+            .logo
+              a(href='/')
+                img(src='../static/img/cover.png' alt='logo')
+            .menuicons
+              ul
+                a(href='/')
+                  li Home
+                a(href='/AboutUs')
+                  li About
+                a(href='/Services')
+                  li Services
+                a(href='/Tours')
+                  li Tours
+                a(href='/Hotel')
+                  li Hotels
+                a(href='/Blogs')
+                  li Blogs
+                a(href='/Contact')
+                  li Contact
+                a(href='/User')
+                  i.fas.fa-user
+                //- a(href='/LogInSignUp')
+                //-   button#userBtn(type='button') Sign in/Sign up
+                //- a(href='/Logout')
+                //-   button#userBtn2(type='button') Logout
+            #sidenav
+              nav
+                ul
+                  li
+                    a(href='/User')
+                      i.fas.fa-user
+                  li
+                    a(href='/') Home
+                  li
+                    a(href='/AboutUs') About
+                  li
+                    a(href='/Services') Services
+                  li
+                    a(href='./Tours') Tours
+                  li
+                    a(href='/Hotel') Hotels
+                  li
+                    a(href='/Blogs') Blogs
+                  li
+                    a(href='/Contact') Contact
+            #menuBtn
+              i#open.fas.fa-bars.both-oc
+              i#close.fas.fa-times.both-oc
+          .content
+            h1 #{h1}
+            h3
+              | Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eum ipsum dignissimos saepe
+              | quibusdam, nulla velit nemo nihil repellendus commodi ipsam totam numquam atque alias tempora
+              | rem
+              | culpa ex itaque?
+    block content
+    section#Footer
+      .social-links
+        h1 FOLLOW US ON SOCIAL MEDIA
+        .social-media
+          a(href='#')
+            i.fab.fa-facebook
+          a(href='#')
+            i.fab.fa-twitter
+          a(href='#')
+            i.fab.fa-whatsapp
+          a(href='#')
+            i.fab.fa-youtube
+          a(href='#')
+            i.fab.fa-instagram
+      .copy
+        p HandCrafted With ❤️ By :- Siddharth Saraswat &copy; 2021
+  script(src="../static/JS/index.js")
+  block scripts
