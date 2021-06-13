@@ -562,26 +562,31 @@ app.post('/Contact', async (req, res) => {
 // Sign In Form 
 app.post('/SignUp', async (req, res) => {
     try {
+        const email = req.body.email
         const password = req.body.password
         const cpassword = req.body.cpassword
-        if (password === cpassword) {
-            const NewRegister = new Register({
-                name: req.body.name,
-                email: req.body.email,
-                password: req.body.password
-            })
-            const token = await NewRegister.genetateAuthToken();
-            // console.log(`register token is  =>    ${token}`);
-            res.cookie("jwt", token, {
-                expires: new Date(Date.now() + 900000),
-                httpOnly: true
-            });
-            const RegisterUser = await NewRegister.save();
-            res.status(201).redirect("/");
+        const UserEmail = await Register.findOne({ email: email });
+        if (UserEmail.email === email) {
+            res.send("User Already Registered...!!!")
         } else {
-            res.send("Passwords are Not Same")
+            if (password === cpassword) {
+                const NewRegister = new Register({
+                    name: req.body.name,
+                    email: req.body.email,
+                    password: req.body.password
+                })
+                const token = await NewRegister.genetateAuthToken();
+                // console.log(`register token is  =>    ${token}`);
+                res.cookie("jwt", token, {
+                    expires: new Date(Date.now() + 900000),
+                    httpOnly: true
+                });
+                const RegisterUser = await NewRegister.save();
+                res.status(201).redirect("/");
+            } else {
+                res.send("Passwords are Not Same")
+            }
         }
-
     } catch (error) {
         res.status(400).send(error)
     }
