@@ -1,1 +1,1 @@
-[a link](http://vagary-tour-travels.herokuapp.com/)
+[Link to the Project](http://vagary-tour-travels.herokuapp.com/)
